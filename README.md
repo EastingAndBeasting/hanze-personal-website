@@ -10,4 +10,6 @@ Afterwards all indentions are fixed using `gulp-html-beautify` and the built .ht
 2. Clone this repository
 1. Install node.js and npm
 3. Run `npm install` in the root directory
-4. Run `gulp` to build the project.
+4. Run `gulp compile` to build the project.
+
+You can also run `gulp` to start watching project files, which compiles the project whenever a file is changed.

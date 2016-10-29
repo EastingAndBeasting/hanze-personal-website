@@ -10,7 +10,7 @@ gulp.task('default', function () {
 gulp.task('compile', function() {
   return gulp.src('src/*.+(html|nunjucks)')
     .pipe(data(function() {
-      return require('./src/data/data.json')
+      return require('./src/data/data.json');
     }))
     .pipe(nunjucksRender({
       path: 'src/partials/'
