@@ -1,5 +1,5 @@
 # hanze-personal-website
-A school project. After a moodboard has been made about a student, it's your job to design and create the actual website for him/her based on the feel of the moodboard. 
+A school project. After a moodboard has been made of a student, it's your job to design and create the actual website for him/her based on the feel of the moodboard. 
 
 To make this a bit more interesting than just HTML/CSS, I've added npm + gulp to create an easy to use template system:
 
