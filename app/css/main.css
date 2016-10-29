@@ -58,12 +58,12 @@ img {
 	margin: auto;
 	margin-top: 0
 }
-.articles {
-	/*max-width: 720px;
+.article-main {
 	margin: auto;*/
 	width: 50%;
 	padding: 2em;
 }
+@media screen and (max-width: 960px) { .article-main { max-width: 100%; }}
 .article-section {
 	padding-top: 3em;
 }
@@ -126,10 +126,7 @@ header {
 }
 @media screen and (max-width: 960px) { .big-logo, .big-steven { width: 50%; }}
 @media screen and (max-width: 640px) { .big-logo { width: 50%; }}
-.header-redbar {
-	/*height: 0.5em;*/
-	/*background-color: #F64338;*/
-}
+
 footer {
 	width: 100%;
 	bottom: 0;
@@ -176,15 +173,6 @@ footer {
 main {
 	padding-top: 2rem;
 	padding-bottom: 3rem;
-}
-.content-header-text {
-	max-width: 50%;
-	padding: 2rem;
-}
-@media screen and (max-width: 960px) {
-	.content-header-text {
-		max-width: 100%;
-	}
 }
 
 
