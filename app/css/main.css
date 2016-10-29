@@ -43,7 +43,7 @@ p {
 hr {
 	height: 0.2em;
 	width: 15%;
-	margin: 3em 0;
+	margin: 3em 0 0 0;
 	border: none;
 	background-color: #c4c4c4;
 }
@@ -59,9 +59,12 @@ img {
 	margin-top: 0
 }
 .articles {
-	padding: 0 2em;
+	padding: 2em;
 	max-width: 720px;
 	margin: auto;
+}
+.article-section {
+	padding-top: 3em;
 }
 .align-right {
 	text-align: right;
