@@ -6,7 +6,7 @@
     <nav>
       <a class="nav-item {%if page == "portfolio" %} active {% endif %}" href="portfolio.html">Portfolio</a>
       <a class="nav-item {%if page == 'hobbies' %} active {% endif %}" href="#">Hobby's</a>
-      <a class="nav-item {%if page == 'story' %} active {% endif %}" href="#">Werk/school</a>
+      <a class="nav-item {%if page == 'werkschool' %} active {% endif %}" href="workschool.html#">Werk/school</a>
     </nav>
     {%if page == "home" %}
       <div class="homepage-header">

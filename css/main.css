@@ -32,13 +32,20 @@ h1 {
 	font-size: 1.5em;
 }
 h2 {
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 p {
 	color: #656565;
 	margin-bottom: 1em;
 	line-height: 140%;
 	text-align: justify;
+}
+hr {
+	height: 0.2em;
+	width: 15%;
+	margin: 3em 0;
+	border: none;
+	background-color: #c4c4c4;
 }
 img {
 	vertical-align: middle;
@@ -50,6 +57,11 @@ img {
 	max-width: 1280px;
 	margin: auto;
 	margin-top: 0
+}
+.articles {
+	padding: 0 2em;
+	max-width: 720px;
+	margin: auto;
 }
 .align-right {
 	text-align: right;
@@ -216,3 +228,6 @@ main {
 	background-color: #01BCD6;
 	color: white;
 }
+
+
+/* Work and school */
