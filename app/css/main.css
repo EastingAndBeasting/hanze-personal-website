@@ -96,12 +96,12 @@ header {
 	padding: 0 2rem;
 	padding-bottom: 1rem;
 }
-.header-navbar {
+.header-nav {
 	float: right;
 	margin-top: 0.5rem;
 	margin-right: 1rem;
 }
-@media screen and (max-width: 960px) { .header-navbar .nav-item { display: block; }}
+@media screen and (max-width: 960px) { .header-nav .nav-item { display: block; }}
 .homepage-header {
 	position: relative;
 	padding: 0 2rem;
@@ -113,13 +113,13 @@ header {
 }
 .big-logo {
 	position: absolute;
-	width: 25rem;
+	width: 30rem;
 	left: 50%;
 	top: 50%;
 	padding-right: 2rem;
 	transform: translate(0,-50%)
 }
-@media screen and (max-width: 800px) { .big-logo, .big-steven { width: 50%; }}
+@media screen and (max-width: 960px) { .big-logo, .big-steven { width: 50%; }}
 @media screen and (max-width: 640px) { .big-logo { width: 50%; }}
 
 footer {
@@ -129,7 +129,11 @@ footer {
 }
 .footer-nav {
 	padding: 1rem 2rem;
+	display: flex;
+	justify-content: flex-end;
 }
+@media screen and (max-width: 960px) { .footer-nav { flex-direction: column }}
+@media screen and (max-width: 960px) { .footer-nav .nav-item { display: block; margin: 0.5em auto; }}
 
 
 /* Navigation elements */
