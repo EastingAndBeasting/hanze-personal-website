@@ -3,7 +3,7 @@
     <a href="index.html">
       <img class="header-logo" src="img/logo.svg" alt="Logo">
     </a>
-    <nav>
+    <nav class="header-navbar">
       <a class="nav-item {%if page == "portfolio" %} active {% endif %}" href="portfolio.html">Portfolio</a>
       <a class="nav-item {%if page == 'hobbies' %} active {% endif %}" href="hobbies.html">Hobby's</a>
       <a class="nav-item {%if page == 'werkschool' %} active {% endif %}" href="workschool.html#">Werk/school</a>

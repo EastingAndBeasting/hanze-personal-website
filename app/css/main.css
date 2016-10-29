@@ -96,11 +96,12 @@ header {
 	padding: 0 2rem;
 	padding-bottom: 1rem;
 }
-nav {
+.header-navbar {
 	float: right;
 	margin-top: 0.5rem;
 	margin-right: 1rem;
 }
+@media screen and (max-width: 960px) { .header-navbar .nav-item { display: block; }}
 .homepage-header {
 	position: relative;
 	padding: 0 2rem;
@@ -140,7 +141,6 @@ footer {
 	text-transform: uppercase;
 	text-decoration: none;
 }
-@media screen and (max-width: 960px) { .nav-item { display: block; }}
 .nav-item::after {
 	content: "";
 	display: inline-block;
