@@ -1,5 +1,5 @@
 # hanze-personal-website
-A school project. Create a personal website for a studet, following design guidelines different student has created.
+A school project. After a moodboard has been made about a student, it's your job to design and create the actual website for him/her based on the feel of the moodboard. 
 
 To make this a bit more interesting than just HTML/CSS, I've added npm + gulp to create an easy to use template system:
 
