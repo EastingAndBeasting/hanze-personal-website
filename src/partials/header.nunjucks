@@ -10,8 +10,8 @@
     </nav>
     {%if page == "home" %}
       <div class="homepage-header">
-        <img class="big-steven" src="img/steven.png" alt="Steven">
-        <img class="big-logo" src="img/logo.svg" alt="Logo">
+        <img class="big-steven fade-in" src="img/steven.png" alt="Steven">
+        <img class="big-logo fade-in" src="img/logo.svg" alt="Logo">
       </div>
     {% endif %}
   </div>

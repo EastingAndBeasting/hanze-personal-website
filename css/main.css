@@ -1,5 +1,6 @@
-/* Fonts */
+/* Import fonts, partials */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('animations.css');
 
 /* Reset padding/margin/box-sizing */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, input, ins, kbd, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, hgroup, menu, nav, section {
@@ -7,7 +8,6 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	padding: 0;
 	box-sizing: border-box;
 }
-
 
 /* html and body */
 html, body {
@@ -178,13 +178,13 @@ main {
 @media screen and (max-width: 960px) { .item-wrap { width: 50%; }}
 @media screen and (max-width: 640px) { .item-wrap { width: 100%; }}
 
-.item-wrap:nth-child(1) .item .item-title {
+.item-wrap:nth-child(3n+1) .item .item-title {
 	background-color: #01BCD6;
 }
-.item-wrap:nth-child(2) .item .item-title {
+.item-wrap:nth-child(3n+2) .item .item-title {
 	background-color: #2196F3;
 }
-.item-wrap:nth-child(3) .item .item-title {
+.item-wrap:nth-child(3n+3) .item .item-title {
 	background-color: #3F51B5;
 }
 .item {
