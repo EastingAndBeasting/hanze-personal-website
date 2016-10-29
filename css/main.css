@@ -1,0 +1,209 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+/* Reset padding/margin/box-sizing */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, input, ins, kbd, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* html and body */
+html, body {
+	width: 100%;
+	height: 100%;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+@media screen and (max-width: 640px) { body { font-size: 0.9em; }}
+
+
+/* Text tags */
+h1, h2, h3, h4, h5, h6 {
+	color: #444444;
+	margin-bottom: 0.5em;
+	font-weight: 500;
+}
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.3em;
+}
+p {
+	color: #656565;
+	margin-bottom: 1em;
+	line-height: 140%;
+	text-align: justify;
+}
+img {
+	vertical-align: middle;
+}
+
+
+/* Shared styles */
+.maxwidth {
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 0
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+.bg-primary {
+	background-color: #3F51B5;
+}
+.btn-primary {
+	display: inline-block;
+	padding: 0.3rem 1rem;
+	margin-right: 1rem;
+	color: white;
+	text-decoration: none;
+	background-color: #2196F3;
+	transition: background-color 150ms ease-in-out;
+}
+.btn-primary:hover {
+	background-color: black;
+}
+
+
+/* Header and footer */
+header {
+	padding: 1rem 0;
+	padding-bottom: 0;
+	border-bottom: #F64338 solid 0.5em;
+}
+.header-logo {
+	padding: 0 2rem;
+	padding-bottom: 1rem;
+}
+nav {
+	float: right;
+	margin-top: 0.5rem;
+	margin-right: 1rem;
+}
+.homepage-header {
+	position: relative;
+	padding: 0 2rem;
+	padding-top: 3rem;
+}
+@media screen and (max-width: 640px) { .homepage-header { display: none; }}
+.big-steven {
+	width: 20rem;
+}
+.big-logo {
+	position: absolute;
+	width: 25rem;
+	left: 50%;
+	top: 50%;
+	padding-right: 2rem;
+	transform: translate(0,-50%)
+}
+@media screen and (max-width: 800px) { .big-logo, .big-steven { width: 50%; }}
+@media screen and (max-width: 640px) { .big-logo { width: 50%; }}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	font-size: 0.9em;
+}
+.footer-nav {
+	padding: 1rem 2rem;
+}
+
+
+/* Navigation elements */
+.nav-item {
+	display: inline-block;
+	position: relative;
+	margin: 0 1rem;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+@media screen and (max-width: 960px) { .nav-item { display: block; }}
+.nav-item::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	height: 0.2rem;
+	width: 0%;
+	top: 100%;
+	left: 50%;
+	opacity: 0;
+	background-color: white;
+	transition: all 200ms cubic-bezier(.15,.26,.04,1);
+}
+.nav-item:hover::after, .active::after {
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+
+/* Main content */
+main {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+.content-header-text {
+	max-width: 50%;
+	padding: 2rem;
+}
+@media screen and (max-width: 960px) {
+	.content-header-text {
+		max-width: 100%;
+	}
+}
+
+
+/* Portfolio, grid system using the flexbox model */
+.portfolio-grid {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.item-wrap {
+	display: inline-block;
+	width: 33%;
+	padding: 2em;
+}
+@media screen and (max-width: 960px) { .item-wrap { width: 50%; }}
+@media screen and (max-width: 640px) { .item-wrap { width: 100%; }}
+
+.item-wrap:nth-child(1) .item .item-title {
+	background-color: #01BCD6;
+}
+.item-wrap:nth-child(2) .item .item-title {
+	background-color: #2196F3;
+}
+.item-wrap:nth-child(3) .item .item-title {
+	background-color: #3F51B5;
+}
+.item {
+	display: inline-block;
+	width: 100%;
+	background: grey;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.2);
+}
+.item-thumb {
+	height: 16em;
+	background-color: #AAAAAA;
+	overflow: hidden;
+}
+.item-thumb img {
+	width: 100%;
+}
+.item-title {
+	font-size: 1.1em;
+	padding: 0.8em;
+	background-color: #01BCD6;
+	color: white;
+}

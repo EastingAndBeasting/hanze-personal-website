@@ -1,0 +1,46 @@
+{% set page = "portfolio" %}
+
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Steven</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+
+    <body>
+
+        {% include "header.nunjucks" %}
+
+        <main class="maxwidth">
+          <div class="content-header-text">
+            <h1>Portfolio</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices nibh felis, sed volutpat libero faucibus id. Mauris felis quam, vestibulum ac ligula a, finibus aliquet velit.</p>
+          </div>
+
+          <div class="portfolio-grid">
+            {% for project in projects %}
+              <div class="item-wrap">
+                <a href="{{ project.url }}">
+                  <div class="item">
+                    <div class="item-thumb">
+                      <img src="{{ project.imagesrc }}" alt="{{ project.name }} preview">
+                    </div>
+                    <div class="item-title align-center">
+                      <span>{{project.name}}</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+
+        </main>
+
+        {% include "footer.nunjucks" %}
+
+    </body>
+
+</html>

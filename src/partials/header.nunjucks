@@ -1,0 +1,18 @@
+<header class="bg-primary">
+  <div class="maxwidth">
+    <a href="index.html">
+      <img class="header-logo" src="img/logo.svg" alt="Logo">
+    </a>
+    <nav>
+      <a class="nav-item {%if page == "portfolio" %} active {% endif %}" href="portfolio.html">Portfolio</a>
+      <a class="nav-item {%if page == 'hobbies' %} active {% endif %}" href="#">Hobby's</a>
+      <a class="nav-item {%if page == 'story' %} active {% endif %}" href="#">Werk/school</a>
+    </nav>
+    {%if page == "home" %}
+      <div class="homepage-header">
+        <img class="big-steven" src="img/steven.png" alt="Steven">
+        <img class="big-logo" src="img/logo.svg" alt="Logo">
+      </div>
+    {% endif %}
+  </div>
+</header>

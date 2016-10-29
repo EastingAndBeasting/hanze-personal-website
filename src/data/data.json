@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "Projectje hier",
+      "url": "url",
+      "imagesrc": "img/steven.png"
+    },
+    {
+      "name": "Projectje daar",
+      "url": "url",
+      "imagesrc": "img/steven.png"
+    },
+    {
+      "name": "Projectje daar",
+      "url": "url",
+      "imagesrc": "img/steven.png"
+    }
+  ]
+}
