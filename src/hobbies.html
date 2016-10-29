@@ -1,0 +1,38 @@
+{% set page = "hobbies" %}
+
+<!doctype html>
+<html lang="nl">
+
+    {% include "head.nunjucks" %}
+
+    <body>
+
+        {% include "header.nunjucks" %}
+
+        <main class="maxwidth">
+          <div class="content-header-text fade-in">
+            <h1>Hobby's</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices nibh felis, sed volutpat libero faucibus id. Mauris felis quam, vestibulum ac ligula a, finibus aliquet velit.</p>
+          </div>
+
+          <div class="hobbies-grid">
+            {% for hobby in hobbies %}
+              <div class="hobby fade-in">
+                <div class="hobby-icon">
+                  <img src="{{ hobby.imagesrc }}" alt="{{ hobby.name }} preview">
+                </div>
+                <div class="hobby-text">
+                  <h1>{{hobby.name}}</h1>
+                  <p>{{hobby.text}}</p>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+        </main>
+
+        {% include "footer.nunjucks" %}
+
+    </body>
+
+</html>

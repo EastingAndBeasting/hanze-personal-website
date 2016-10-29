@@ -2,16 +2,34 @@
   "projects": [
     {
       "name": "Projectje hier",
-      "url": "url",
+      "url": "project-1.html",
       "imagesrc": "img/steven.png"
     },
     {
       "name": "Projectje daar",
-      "url": "url",
+      "url": "project-2.html",
       "imagesrc": "img/steven.png"
     },
     {
       "name": "Projectje daar",
+      "url": "project-3.html",
+      "imagesrc": "img/steven.png"
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Muziek",
+      "text": "Steven vind eigenlijk alle muziek wel leuk, maar is een grote fan van Stevie Wonder. Daarnaast hij ook veel rock muziek van Eric Clapton en pop nummers. Van de pop nummers luistert hij ook veel trap remixes op Youtube.",
+      "url": "url",
+      "imagesrc": "img/steven.png"
+    },
+    {
+      "name": "Films",
+      "url": "url",
+      "imagesrc": "img/steven.png"
+    },
+    {
+      "name": "Koekjes bakken",
       "url": "url",
       "imagesrc": "img/steven.png"
     }

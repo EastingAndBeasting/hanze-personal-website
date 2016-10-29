@@ -14,5 +14,5 @@ gulp.task('default', function () {
     .pipe(htmlbeautify({
       indent_size: 4
     }))
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./app'))
 });
