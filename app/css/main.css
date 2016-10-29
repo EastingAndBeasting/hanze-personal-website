@@ -59,9 +59,10 @@ img {
 	margin-top: 0
 }
 .articles {
+	/*max-width: 720px;
+	margin: auto;*/
+	width: 50%;
 	padding: 2em;
-	max-width: 720px;
-	margin: auto;
 }
 .article-section {
 	padding-top: 3em;
