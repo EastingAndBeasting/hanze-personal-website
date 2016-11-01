@@ -20,17 +20,17 @@
     {
       "name": "Muziek",
       "text": "Steven vind eigenlijk alle muziek wel leuk, maar is een grote fan van Stevie Wonder. Daarnaast hij ook veel rock muziek van Eric Clapton en pop nummers. Van de pop nummers luistert hij ook veel trap remixes op Youtube.",
-      "imagesrc": "img/steven.png"
+      "icon": "fa-music"
     },
     {
       "name": "Films",
       "text": "Steven vind eigenlijk alle muziek wel leuk, maar is een grote fan van Stevie Wonder. Daarnaast hij ook veel rock muziek van Eric Clapton en pop nummers. Van de pop nummers luistert hij ook veel trap remixes op Youtube.",
-      "imagesrc": "img/steven.png"
+      "icon": "fa-film"
     },
     {
-      "name": "Koekjes bakken",
+      "name": "Boeken lezen",
       "text": "Steven vind eigenlijk alle muziek wel leuk, maar is een grote fan van Stevie Wonder. Daarnaast hij ook veel rock muziek van Eric Clapton en pop nummers. Van de pop nummers luistert hij ook veel trap remixes op Youtube.",
-      "imagesrc": "img/steven.png"
+      "icon": "fa-book"
     }
   ]
 }

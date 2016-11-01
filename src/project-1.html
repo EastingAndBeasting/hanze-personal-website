@@ -1,0 +1,32 @@
+{% set page = "portfolio" %}
+
+<!doctype html>
+<html lang="nl">
+
+    <head>
+      {% include "head.nunjucks" %}
+      <title>Steven</title>
+      <meta name="author" content="Mark Oosting">
+      <meta name="description" content="Steven's personal website">
+      <meta name="keywords" content="HTML,CSS,Steven braham, Personal website">
+    </head>
+
+    <body>
+
+        {% include "header.nunjucks" %}
+
+        <main class="maxwidth">
+          <article class="article-main fade-in">
+            <h1>Dit is een projectpagina.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultrices nibh felis, sed volutpat libero faucibus id. Mauris felis quam, vestibulum ac ligula a, finibus aliquet velit.
+            </p>
+          </article>
+
+        </main>
+
+        {% include "footer.nunjucks" %}
+
+    </body>
+
+</html>

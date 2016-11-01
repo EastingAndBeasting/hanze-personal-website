@@ -10,7 +10,7 @@
       <meta name="description" content="Steven's personal website">
       <meta name="keywords" content="HTML,CSS,Steven braham, Personal website">
     </head>
-    
+
     <body>
 
         {% include "header.nunjucks" %}
@@ -25,7 +25,7 @@
             {% for hobby in hobbies %}
               <div class="hobby fade-in">
                 <div class="hobby-icon">
-                  <img src="{{ hobby.imagesrc }}" alt="{{ hobby.name }} preview">
+                  <i class="center fa {{ hobby.icon }}" aria-hidden="true"></i>
                 </div>
                 <div class="hobby-text">
                   <h1>{{hobby.name}}</h1>
