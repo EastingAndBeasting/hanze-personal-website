@@ -128,13 +128,18 @@ header {
 
 .header-nav {
 	float: right;
-	display: flex;
-	overflow: hidden;
 	margin-top: 0.5rem;
 	margin-right: 1rem;
 	transition: height 200ms cubic-bezier(.15,.26,.04,1);
 }
-@media screen and (max-width: 960px) { .header-nav { height: 0; float: none; margin-right: 0; flex-direction: column }}
+@media screen and (max-width: 960px) { .header-nav {
+	display: flex;
+	flex-direction: column;
+	float: none;
+	height: 0;
+	margin-right: 0;
+	overflow: hidden;
+}}
 @media screen and (max-width: 960px) { .header-nav .nav-item { margin: 0.5em auto; }}
 
 .homepage-header {
