@@ -106,12 +106,37 @@ header {
 	padding: 0 2rem;
 	padding-bottom: 1rem;
 }
+@media screen and (max-width: 960px) { .header-logo { width: 16rem; padding: 0em 1rem 0.4rem 1rem }}
+
+#navtoggle {
+	display: none;
+	z-index: -1;
+	position: absolute;
+}
+#navtoggle:checked ~ .header-nav {
+	float: none;
+	height: 7rem;
+}
+.hamburger {
+	float: right;
+	margin-right: 1em;
+	cursor: pointer;
+	color: white;
+	font-size: 2em;
+}
+@media screen and (min-width: 960px) { .hamburger { display: none; }}
+
 .header-nav {
 	float: right;
+	display: flex;
+	overflow: hidden;
 	margin-top: 0.5rem;
 	margin-right: 1rem;
+	transition: height 200ms cubic-bezier(.15,.26,.04,1);
 }
-@media screen and (max-width: 960px) { .header-nav .nav-item { display: block; }}
+@media screen and (max-width: 960px) { .header-nav { height: 0; float: none; margin-right: 0; flex-direction: column }}
+@media screen and (max-width: 960px) { .header-nav .nav-item { margin: 0.5em auto; }}
+
 .homepage-header {
 	position: relative;
 	width: 100%;
