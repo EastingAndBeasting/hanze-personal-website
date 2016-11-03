@@ -3,7 +3,7 @@ var nunjucksRender = require('gulp-nunjucks-render');
 var data = require('gulp-data');
 var htmlbeautify = require('gulp-html-beautify');
 
-gulp.task('default', function () {
+gulp.task('default', ['compile'], function () {
 	gulp.watch('src/*.+(html|nunjucks)',['compile']);
 });
 
