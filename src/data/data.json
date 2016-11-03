@@ -1,19 +1,19 @@
 {
   "projects": [
     {
-      "name": "Projectje hier",
+      "name": "Bungalowselect.nl",
       "url": "project-1.html",
-      "imagesrc": "img/steven.png"
+      "imagesrc": "img/bungalowselect.jpg"
     },
     {
-      "name": "Projectje daar",
+      "name": "Allekentekens.nl",
       "url": "project-2.html",
-      "imagesrc": "img/steven.png"
+      "imagesrc": "img/allekentekens.jpg"
     },
     {
-      "name": "Projectje daar",
+      "name": "Adriatic veendam",
       "url": "project-3.html",
-      "imagesrc": "img/steven.png"
+      "imagesrc": "img/adriaticveendam.jpg"
     }
   ],
   "hobbies": [
