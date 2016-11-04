@@ -2,17 +2,17 @@
   "projects": [
     {
       "name": "Bungalowselect.nl",
-      "url": "project-1.html",
+      "url": "bungalowselect.html",
       "imagesrc": "img/bungalowselect.jpg"
     },
     {
       "name": "Allekentekens.nl",
-      "url": "project-2.html",
+      "url": "allekentekens.html",
       "imagesrc": "img/allekentekens.jpg"
     },
     {
       "name": "Adriatic veendam",
-      "url": "project-3.html",
+      "url": "adriaticveendam.html",
       "imagesrc": "img/adriaticveendam.jpg"
     }
   ],

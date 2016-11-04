@@ -29,6 +29,7 @@ body {
 @media screen and (max-width: 640px) { body { font-size: 0.9em; }}
 
 main {
+	width: 100%;
 	padding-top: 2rem;
 	padding-bottom: 3rem;
 }
@@ -53,9 +54,12 @@ p {
 	text-align: justify;
 }
 ul, ol {
-	margin-left: 2em;
+	margin-left: 1em;
 	margin-bottom: 1em;
 	color: #656565;
+}
+ul ul {
+	margin-bottom: 0;
 }
 hr {
 	height: 0.2em;
