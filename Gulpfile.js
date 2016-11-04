@@ -4,7 +4,7 @@ var data = require('gulp-data');
 var htmlbeautify = require('gulp-html-beautify');
 
 gulp.task('default', ['compile'], function () {
-	gulp.watch('src/*.+(html|nunjucks)',['compile']);
+	gulp.watch('src/**/*.+(html|nunjucks)',['compile']);
 });
 
 gulp.task('compile', function() {

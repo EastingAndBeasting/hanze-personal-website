@@ -1,9 +1,9 @@
 <footer class="bg-primary">
   <div class="maxwidth">
     <div class="footer-nav">
-      <a class="nav-item" href="#">Ontwerpproces</a>
-      <a class="nav-item" href="#">Verantwoording</a>
-      <a class="nav-item" href="#">Sitemap</a>
+      <a class="nav-item {%if page == 'ontwerpproces' %} active {% endif %}" href="ontwerpproces.html">Ontwerpproces</a>
+      <a class="nav-item {%if page == 'verantwoording' %} active {% endif %}" href="verantwoording.html">Verantwoording</a>
+      <a class="nav-item {%if page == 'sitemap' %} active {% endif %}" href="sitemap.html">Sitemap</a>
     </div>
   </div>
 </footer>
