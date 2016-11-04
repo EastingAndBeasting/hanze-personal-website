@@ -101,7 +101,7 @@ img {
 	text-align: center;
 }
 .center {
-	position: relative;
+	position: absolute;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
@@ -137,7 +137,7 @@ img {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	height: 0.2rem;
+	height: 0.18rem;
 	width: 0%;
 	top: 100%;
 	left: 50%;

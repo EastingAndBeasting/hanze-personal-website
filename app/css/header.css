@@ -18,7 +18,7 @@ header {
 }
 #navtoggle:checked ~ .header-nav {
 	float: none;
-	height: 7rem;
+	height: 8rem;
 }
 .hamburger {
 	float: right;
@@ -35,20 +35,19 @@ header {
 	margin-right: 1rem;
 	transition: height 200ms cubic-bezier(.15,.26,.04,1);
 }
+.header-nav ul {
+	list-style-type: none;
+}
+.header-nav ul li {
+	display: inline-block;
+}
 @media screen and (max-width: 960px) { .header-nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
 	float: none;
 	height: 0;
 	margin-right: 0;
 	overflow: hidden;
 }}
-@media screen and (max-width: 960px) { .header-nav .nav-item { margin: 0.5em auto; }}
+@media screen and (max-width: 960px) { .header-nav ul li { display: block; margin: 1em auto; text-align: center; }}
 
 .homepage-header {
 	position: relative;

@@ -8,9 +8,11 @@
     <label for="navtoggle"><i class="hamburger fa fa-bars" aria-hidden="true"></i></label>
 
     <nav class="header-nav">
-      <a class="nav-item {%if page == "portfolio" %} active {% endif %}" href="portfolio.html">Portfolio</a>
-      <a class="nav-item {%if page == 'hobbies' %} active {% endif %}" href="hobbies.html">Hobby's</a>
-      <a class="nav-item {%if page == 'workschool' %} active {% endif %}" href="workschool.html#">Werk/school</a>
+      <ul>
+        <li><a class="nav-item {%if page == "portfolio" %} active {% endif %}" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-item {%if page == 'hobbies' %} active {% endif %}" href="hobbies.html">Hobby's</a></li>
+        <li><a class="nav-item {%if page == 'workschool' %} active {% endif %}" href="workschool.html#">Werk/school</a></li>
+      </ul>
     </nav>
 
     {%if page == "home" %}
