@@ -16,19 +16,61 @@
         {% include "header.nunjucks" %}
 
         <main class="maxwidth">
-          <article class="article-main fade-in">
+          <article class="article-center fade-in">
             <h1>Verantwoording</h1>
+            <ul>
+              <li>5x gestalt</li>
+              <li>5x heuristiek</li>
+            </ul>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <section class="article-section fade-in">
+            <section class="article-section">
               <h2>Lorem ipsum</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem esse possimus omnis laborum debitis dolores tempora ipsa architecto, repudiandae eum, ut, dolorum voluptas voluptates in, reiciendis enim quos. Maxime, asperiores.
               </p>
-              <hr>
             </section>
-
+            <section class="article-section">
+              <h2>Verantwoording gebruike code</h2>
+              <p>
+                Deze website gebruikt niet het standaard '960px grid' dat veel leerlingen hebben gebruikt. In plaats daarvan, gebruik ik een simpele elementklasse 'maxwidth', wat als 'row' dient, met daarin vooral op 'flexbox' gebaseerde uitlijning.
+                De 'maxwidth' klasse bepaald de maximum breedte van de content en schaalt dynamisch mee met de breedte van de pagina.
+              </p>
+              <p>
+                Mijn portfoliopagina bevat een voorbeeld van mijn eigen systeem:
+                Alle portfolio-items krijgen elk een breedte van 33%, met een padding die de groote van het element er binnen bepaalt.
+                Om dit systeem responsive te maken, wordt met behulp van de css 'nth-child' selector en media queries de padding links of rechts op 0 gezet, zodat de randen aansluiten op de maximum breedte van de pagina.
+              </p>
+              <p>
+                Mijn docent, C.F.S. Bot, vond mijn eigen systeem prima. Tijdens het overleg met haar vroeg ik ook of het toegestaan was om andere, complexere systemen te gebruiken zoals node.js om deze website op te bouwen.
+                Ik mocht in principe alles gebruiken, mits ik het kon toelichten en het niet direct van internet geplukt was.
+              </p>
+            </section>
+            <section class="article-section">
+              <h2>Template systeem</h2>
+              <p>
+                Naast mijn eigen gridsysteem heb ik dus ook een template systeem gebruikt, wat draait op <a target="_blank" href="https://nodejs.org/en/">node.js</a> en <a target="_blank" href="http://gulpjs.com/">gulp.js</a>.
+                Het javascript gebaseerde node.js is gemaakt om open-source 'packages' in je project te laden die verschillende taken voor je kunnen uitvoeren.
+              </p>
+              <p>
+                Ik heb gekozen om het pakket 'gulp' te installeren: een build tool waarmee je het aanpassen van bestanden kan automatiseren, wat kan worden uitgebreid met andere node-gebaseerde pakketten.
+                Binnen het bestand 'Gulpfile.js' geeft je aan welke pakketten moeten worden geladen en op welke volgorde de taken moeten worden uitgevoerd.
+              </p>
+              <p>
+                Voor dit project heb ik 'gulp-nunjucks-render' gebruikt om .nunjucks templates in mijn html te kunnen laden.
+                Voordat de templatebestanden zijn ingeladen, leest gulp eerst nog het bestand 'data.json' uit met behulp van het pakket gulp-data.
+                Hierin heb ik alle hobby's en portfolio items gezet, zodat er met behulp van een 'loop' een aantal elementen worden gerenderd.
+                Nadat de html is gebouwd, worden met behulp van het pakket 'gulp-html-beautify' alle tab-indents netjes gemaakt.
+              </p>
+              <p>
+                Dus, wanneer via de commandline het commando 'gulp' wordt aangeroepen, pakt het programma al mijn html-bestanden uit de /src/ map, templates uit /src/partials/ en data uit /src/data/data.json.
+                De bestanden worden via het ramgeheugen doorgegeven aan elke taak via '.pipe()', waarna de afgemaakte bestanden in de /app/ map worden geplaatst.
+              </p>
+              <p>
+                Het hele project kan worden terug gevonden op mijn persoonlijke <a target="_blank" href="https://github.com/EastingAndBeasting/hanze-personal-website">Github pagina</a>.
+              </p>
+            </section>
           </article>
         </main>
 
