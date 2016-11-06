@@ -42,16 +42,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 h1 {
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 h2 {
-	font-size: 1.2em;
+	font-size: 1.3em;
+}
+h3 {
+	font-size: 1em;
+	margin-top: 1.2em;
 }
 p {
 	color: #656565;
 	margin-bottom: 1em;
 	line-height: 150%;
-	text-align: justify;
 }
 ul, ol {
 	margin-left: 1em;
@@ -64,7 +67,7 @@ ul ul {
 hr {
 	height: 0.2em;
 	width: 15%;
-	margin: 3em 0 0 0;
+	margin: 2em 0 0 0;
 	text-align: left;
 	border: none;
 	background-color: #c4c4c4;
@@ -94,7 +97,7 @@ img {
 .article-section {
 	padding-top: 2em;
 }
-.article-section img {
+.article-main img, .article-center img {
 	margin-top: 1em;
 	margin-bottom: 2em;
 	box-shadow: 0 10px 25px rgba(0,0,0,0.10);
@@ -119,6 +122,7 @@ img {
 	display: inline-block;
 	padding: 0.3rem 1rem;
 	margin-right: 1rem;
+	margin-bottom: 1rem;
 	color: white;
 	text-decoration: none;
 	background-color: #2196F3;

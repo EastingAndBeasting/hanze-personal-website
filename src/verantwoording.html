@@ -18,28 +18,77 @@
         <main class="maxwidth">
           <article class="article-center fade-in">
             <h1>Verantwoording</h1>
-            <ul>
-              <li>5x gestalt</li>
-              <li>5x heuristiek</li>
-            </ul>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              De gemaakte ontwerpkeuzes van deze website zijn gebaseerd op achterliggende theorieën: de heuristieken van Nielsen en de algemene gestaltprincipes. De elementen uit deze theorieën worden hieronder toegelicht en geïllustreerd met behulp van voorbeelden die te zien zijn op deze website.
             </p>
             <section class="article-section">
-              <h2>Lorem ipsum</h2>
+              <h2>Heuristieken</h2>
+
+              <h3>Match between system and the real world</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem esse possimus omnis laborum debitis dolores tempora ipsa architecto, repudiandae eum, ut, dolorum voluptas voluptates in, reiciendis enim quos. Maxime, asperiores.
+                Een website zou overeenkomen met dingen uit het echte leven en niet voelen als output van een machine. Zo heb ik alle teksten op de website geschreven in 'gewone taal', met als doel om dicht bij de gebruiker te blijven.
+              </p>
+
+              <h3>User control and freedom</h3>
+              <p>
+                Een gebruiker zou altijd de mogelijkheid moeten hebben om terug te gaan naar de vorige status van een programma. Dit komt in deze website terug in de portfolio detailpagina's: er wordt een knop getoond waarmee de gebruiker terug kan navigeren naar het overzicht.
+              </p>
+
+              <h3>Consistency and standards</h3>
+              <p>
+                De website volgt een aantal principes die op de meeste websites worden toegepast, zodat de gebruiker een vertrouwd gevoel krijgt. Zo staat bijvoorbeeld het logo van de website in de linkerbovenhoek en de navigatiebalk in de rechterbovenhoek.
+              </p>
+
+              <h3>Recognition rather than recall</h3>
+              <p>
+                Het gebruik van bekende elementen in een website is erg belangrijk voor een gestroomlijnde ervaring tijdens het surfen. Zo heb ik bijvoorbeeld het hamburgermenu in de mobiele weergave niet een compleet ander uiterlijk gegeven, maar ben bij de 'goede oude' drie lijntjes gebleven die elke gebruiker zal herkennen.
+              </p>
+
+              <h3>Aesthetic and minimalist design</h3>
+              <p>
+                Om een overlading van informatie te voorkomen, is het van belang dat de website op de meest minimale manier wordt weergegeven. Ik heb er dus voor gekozen om de pagina's op de meest simpele manier vorm te geven. Zo heeft deze pagina bijvoorbeeld geen afbeeldingen of te lange teksten.
               </p>
             </section>
+
             <section class="article-section">
-              <h2>Verantwoording gebruike code</h2>
+              <h2>Gestaltprincipes</h2>
+
+              <h3>Figure-ground</h3>
               <p>
-                Deze website gebruikt niet het standaard '960px grid' dat veel leerlingen hebben gebruikt. In plaats daarvan, gebruik ik een simpele elementklasse 'maxwidth', wat als 'row' dient, met daarin vooral op 'flexbox' gebaseerde uitlijning.
+                Wanneer een voor- en achtergrond geen duidelijk onderscheid hebben, moeten gebruikers zelf een keuze maken wat ze als voorgrond zien. Om een duidelijk contrast te maken tussen voor- en achtergrond heb ik bijvoorbeeld op de homepagina een volledig gevulde achtergrondkleur gebruikt, met daarop een wit logo. In dit geval lijkt het alsof het logo de voorgrond is.
+              </p>
+
+              <h3>Proximity</h3>
+              <p>
+                Elementen worden gegroepeerd gezien wanneer ze dicht bij elkaar staan ten opzichte van de rest. Zo worden alle bij elkaar horende stukken tekst onderverdeeld, waarbij de tekst vrij dicht bij zijn bijbehorende kopje staat. Ook staan bijvoorbeeld de navigatie-items bij elkaar en worden niet verspreid over de volledige breedte van de pagina.
+              </p>
+
+              <h3>Similarity</h3>
+              <p>
+                Dingen die bij elkaar horen zouden er hetzelfde uit moeten zien. Zo zien alle knoppen op mijn website er hetzelfde uit, maar ook bijvoorbeeld de items in het portfolio en de hobby's op de hobby's pagina.
+              </p>
+
+              <h3>Continuity</h3>
+              <p>
+                Elementen worden gegroepeerd op basis van hun uitlijning ten opzichte van elkaar, waarbij het meest logische pad een groep vormt. Zo heeft de sitemap bijvoorbeeld een hiërarchische structuur, waardoor het duidelijk is welke links bij elkaar horen en onder welke pagina ze zich bevinden.
+              </p>
+
+              <h3>Closure</h3>
+              <p>
+                Door elementen een duidelijk kader te geven worden ze gegroepeerd. Op de hobby's pagina zie je bijvoorbeeld dat het icoon bij de tekst aan zijn zijde hoort, en niet bij de tekst er onder: de achtergrondkleur vormt een kader.
+              </p>
+
+            </section>
+
+            <section class="article-section">
+              <h2>Verantwoording gebruikte code</h2>
+              <p>
+                Deze website gebruikt niet het standaard '960px grid' dat veel leerlingen hebben gebruikt. In plaats daarvan, gebruik ik een simpele element klasse 'maxwidth', wat als 'row' dient, met daarin vooral op 'flexbox' gebaseerde uitlijning.
                 De 'maxwidth' klasse bepaald de maximum breedte van de content en schaalt dynamisch mee met de breedte van de pagina.
               </p>
               <p>
-                Mijn portfoliopagina bevat een voorbeeld van mijn eigen systeem:
-                Alle portfolio-items krijgen elk een breedte van 33%, met een padding die de groote van het element er binnen bepaalt.
+                Mijn portfolio pagina bevat een voorbeeld van mijn eigen systeem:
+                Alle portfolio-items krijgen een breedte van 33%, met een padding die de grootte van het element er binnen bepaalt.
                 Om dit systeem responsive te maken, wordt met behulp van de css 'nth-child' selector en media queries de padding links of rechts op 0 gezet, zodat de randen aansluiten op de maximum breedte van de pagina.
               </p>
               <p>
@@ -50,7 +99,7 @@
             <section class="article-section">
               <h2>Template systeem</h2>
               <p>
-                Naast mijn eigen gridsysteem heb ik dus ook een template systeem gebruikt, wat draait op <a target="_blank" href="https://nodejs.org/en/">node.js</a> en <a target="_blank" href="http://gulpjs.com/">gulp.js</a>.
+                Naast mijn eigen gridsysteem heb ik naar aanleiding van het gesprek met mijn docent C.F.S. Bot ook een template systeem gebruikt, wat draait op <a target="_blank" href="https://nodejs.org/en/">node.js</a> en <a target="_blank" href="http://gulpjs.com/">gulp.js</a>.
                 Het javascript gebaseerde node.js is gemaakt om open-source 'packages' in je project te laden die verschillende taken voor je kunnen uitvoeren.
               </p>
               <p>
@@ -59,16 +108,16 @@
               </p>
               <p>
                 Voor dit project heb ik 'gulp-nunjucks-render' gebruikt om .nunjucks templates in mijn html te kunnen laden.
-                Voordat de templatebestanden zijn ingeladen, leest gulp eerst nog het bestand 'data.json' uit met behulp van het pakket gulp-data.
+                Voordat de template bestanden zijn ingeladen, leest gulp eerst nog het bestand 'data.json' uit met behulp van het pakket gulp-data.
                 Hierin heb ik alle hobby's en portfolio items gezet, zodat er met behulp van een 'loop' een aantal elementen worden gerenderd.
                 Nadat de html is gebouwd, worden met behulp van het pakket 'gulp-html-beautify' alle tab-indents netjes gemaakt.
               </p>
               <p>
                 Dus, wanneer via de commandline het commando 'gulp' wordt aangeroepen, pakt het programma al mijn html-bestanden uit de /src/ map, templates uit /src/partials/ en data uit /src/data/data.json.
-                De bestanden worden via het ramgeheugen doorgegeven aan elke taak via '.pipe()', waarna de afgemaakte bestanden in de /app/ map worden geplaatst.
+                De bestanden worden via het ram geheugen doorgegeven aan elke taak via '.pipe()', waarna de uiteindelijke bestanden in de /app/ map worden geplaatst.
               </p>
               <p>
-                Het hele project kan worden terug gevonden op mijn persoonlijke <a target="_blank" href="https://github.com/EastingAndBeasting/hanze-personal-website">Github pagina</a>.
+                Het hele project kan worden teruggevonden op mijn persoonlijke <a target="_blank" href="https://github.com/EastingAndBeasting/hanze-personal-website">Github pagina</a>.
               </p>
             </section>
           </article>
