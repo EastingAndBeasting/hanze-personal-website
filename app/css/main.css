@@ -79,6 +79,9 @@ img {
 
 
 /* Shared styles */
+.bg-primary {
+	background-color: #3F51B5;
+}
 .maxwidth {
 	max-width: 1280px;
 	margin: auto;
@@ -114,9 +117,6 @@ img {
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	        transform: translate(-50%,-50%);
-}
-.bg-primary {
-	background-color: #3F51B5;
 }
 .btn-primary {
 	display: inline-block;

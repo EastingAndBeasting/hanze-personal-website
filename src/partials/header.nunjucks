@@ -9,9 +9,9 @@
 
     <nav class="header-nav">
       <ul>
-        <li><a class="nav-item {%if page == "portfolio" %} active {% endif %}" href="portfolio.html">Portfolio</a></li>
-        <li><a class="nav-item {%if page == 'hobbies' %} active {% endif %}" href="hobbies.html">Hobby's</a></li>
-        <li><a class="nav-item {%if page == 'workschool' %} active {% endif %}" href="workschool.html">Werk/school</a></li>
+        <li><a class="nav-item{%if page == "portfolio" %} active{% endif %}" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-item{%if page == 'hobbies' %} active{% endif %}" href="hobbies.html">Hobby's</a></li>
+        <li><a class="nav-item{%if page == 'workschool' %} active{% endif %}" href="workschool.html">Werk/school</a></li>
       </ul>
     </nav>
 
