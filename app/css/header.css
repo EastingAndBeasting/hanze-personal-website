@@ -55,17 +55,15 @@ header {
 	overflow: hidden;
 	padding: 0 2rem;
 	padding-top: 2rem;
+	background-image: url('../img/logo.svg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: 30em;
+	background-position: right 3em top 50%;
 }
+@media screen and (max-width: 960px) { .homepage-header { background-size: 44%; }}
 @media screen and (max-width: 640px) { .homepage-header { display: none; }}
 .big-steven {
 	width: 20rem;
 }
-.big-logo {
-	position: absolute;
-	width: 30rem;
-	left: 50%;
-	top: 40%;
-	padding-right: 2rem;
-}
-@media screen and (max-width: 960px) { .big-logo, .big-steven { width: 50%; }}
-@media screen and (max-width: 640px) { .big-logo { width: 50%; }}
+@media screen and (max-width: 960px) { .big-steven { width: 50%; }}
